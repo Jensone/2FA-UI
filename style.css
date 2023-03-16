@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* LinkedIn colors */
+:root {
+    --linkedin-blue: #0966C2;
+    --linkedin-gray: #d3d3d3;
+    --linkedin-gray-hover: #c0c0c0;
+    --linkedin-gray-active: #a9a9a9;
+    --linkedin-gray-light: #f3f2ef;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--linkedin-gray-light);
+}
+
+nav {
+    padding: 1em;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.card {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 1.75em;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card header, .twofa {
+    margin-bottom: 2em;
+}
+
+.get_code {
+    font-size: 10px;
+    letter-spacing: 1px;
+}
+.twofa input {
+    width: 35px;
+    padding: 10px;
+    margin: 5px;
+    border: 2px solid var(--linkedin-gray);
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    outline: none;
+    text-align: center;
+}
+
+.twofa button {
+    border: 0;
+    padding: 1em;
+    background-color: transparent;
+    font-weight: bold;
+    color: var(--linkedin-blue);
+}
+
+.twofa input:focus {
+    border-color: var(--linkedin-blue);
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.return {
+    font-weight: bold;
+    color: var(--linkedin-blue);
+    text-decoration: none;
+}
+
+.foward {
+    padding: 1em 2em;
+    background-color: var(--linkedin-blue);
+    border-radius: 2em;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+}
