@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -22,21 +22,23 @@
                 <section>
                     <p class="get_code">Saisissez le code</p>
                     <div class="twofa">
-                        <input type="text" id="number-1" placeholder="0">
-                        <input type="text" id="number-2" placeholder="0">
-                        <input type="text" id="number-3" placeholder="0">
-                        <input type="text" id="number-4" placeholder="0">
-                        <input type="text" id="number-5" placeholder="0">
-                        <input type="text" id="number-6" placeholder="0">
+                        <input type="text" id="atext" class="number" placeholder="0" maxlength="1">
+                        <input type="text" id="number-2" class="number" placeholder="0" maxlength="1">
+                        <input type="text" id="number-3" class="number" placeholder="0" maxlength="1">
+                        <input type="text" id="number-4" class="number" placeholder="0" maxlength="1">
+                        <input type="text" id="number-5" class="number" placeholder="0" maxlength="1">
+                        <input type="text" id="number-6" class="number" placeholder="0" maxlength="1">
                         <button class="send">Renvoyer le code</button>
                     </div>
                 </section>
                 <footer>
                     <a class="return" href="#">Retour</a>
-                    <a class="foward" href="#">Confirmer le code</a>
+                    <a class="foward">Confirmer le code</a>
                 </footer>
             </div>
         </main>
     </div>
+
+    <script src="./mains.js"></script>
 </body>
 </html>
